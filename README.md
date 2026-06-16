@@ -18,7 +18,7 @@ Input robustness. get_release_notes validates the owner/repo format before any n
 Secrets. The GitHub token is read from an environment variable (GITHUB_TOKEN), never hard-coded. On this Space it's stored in Secrets; locally, in the client configuration.
 Usage
 Via the Gradio interface: open the App tab, pick a tool tab, fill the fields, click Search.
-Via an MCP client: add the Space's MCP URL to your client config (Claude Desktop, Cursor…). The endpoint follows the format https://chloemp-mcp-veille-nlp.hf.space/gradio_api/mcp/.
+Via an MCP client: add the Space's MCP URL to your client config (Claude Desktop, Cursor…). The endpoint follows the format https://huggingface.co/spaces/Chloemp/mcp-veille-nlp .
 Known limitations
 
 The GitHub tool relies on the topic label, which is noisy: catch-all projects tag themselves llm without real relevance. Quality signal comes mainly from HuggingFace and arXiv.
