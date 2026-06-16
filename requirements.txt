@@ -1,0 +1,4 @@
+gradio[mcp]
+huggingface_hub
+requests
+arxiv
