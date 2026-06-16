@@ -19,7 +19,8 @@ Secrets. The GitHub token is read from an environment variable (GITHUB_TOKEN), n
 Usage
 Via the Gradio interface: open the App tab, pick a tool tab, fill the fields, click Search.
 Via an MCP client: add the Space's MCP URL to your client config (Claude Desktop, Cursor…). The endpoint follows the format https://huggingface.co/spaces/Chloemp/mcp-veille-nlp .
-Known limitations
+
+# Known limitations
 
 The GitHub tool relies on the topic label, which is noisy: catch-all projects tag themselves llm without real relevance. Quality signal comes mainly from HuggingFace and arXiv.
 GitHub "trending" is an approximation (stars + date), not the proprietary Trending-page algorithm.
