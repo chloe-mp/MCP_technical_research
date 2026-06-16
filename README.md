@@ -1,7 +1,7 @@
-## MCP_technical_research
+# MCP_technical_research
 MCP server linked to ArXiv, GitHub and HuggingFace
 
-# Overview
+## Overview
 This project exposes, through the Model Context Protocol (MCP), four tools that query the main sources of the NLP/AI ecosystem. Any MCP-compatible assistant (Claude Desktop, Cursor, etc.) can call them in natural language; a Gradio interface also allows manual use.
 The goal isn't to read everything, but to detect signals of change: which methods are rising, which ones enter mainstream libraries, which recent papers move a subfield.
 The four tools
@@ -20,13 +20,13 @@ Usage
 Via the Gradio interface: open the App tab, pick a tool tab, fill the fields, click Search.
 Via an MCP client: add the Space's MCP URL to your client config (Claude Desktop, Cursor…). The endpoint follows the format https://huggingface.co/spaces/Chloemp/mcp-veille-nlp .
 
-# Known limitations
+## Known limitations
 
 The GitHub tool relies on the topic label, which is noisy: catch-all projects tag themselves llm without real relevance. Quality signal comes mainly from HuggingFace and arXiv.
 GitHub "trending" is an approximation (stars + date), not the proprietary Trending-page algorithm.
 Without a GitHub token, the rate limit is 60 requests/hour.
 
-# Future directions
+## Future directions
 
 A benchmark comparison tool (set aside for lack of a stable, free source).
 Signal consolidation (heuristic: library integration > Hub adoption > paper volume).
